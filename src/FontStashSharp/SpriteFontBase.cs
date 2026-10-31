@@ -61,6 +61,10 @@ namespace FontStashSharp
 		/// </summary>
 		public abstract int LineHeight { get; }
 
+		//BC
+		public abstract int Ascender { get; }
+		public abstract int Descender { get; }
+
 		/// <summary>
 		/// Gets the font system this font belongs to, if any.
 		/// </summary>

@@ -48,6 +48,9 @@ namespace FontStashSharp
 
 		private float InverseScale { get; }
 
+		public override int Ascender => 0;
+		public override int Descender => 0;
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ScaledSpriteFont"/> class.
 		/// </summary>

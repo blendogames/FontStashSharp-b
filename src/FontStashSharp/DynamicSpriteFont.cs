@@ -45,6 +45,10 @@ namespace FontStashSharp
 		/// <inheritdoc/>
 		public override Point TextureSize => new Point(_fontSystem.TextureWidth, _fontSystem.TextureHeight);
 
+		//BC Hack to get metric information.
+		public override int Ascender => IndexedMetrics[0].Ascent;
+		public override int Descender => IndexedMetrics[0].Descent;
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DynamicSpriteFont"/> class.
 		/// </summary>
